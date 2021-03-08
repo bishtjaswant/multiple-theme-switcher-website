@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,900;1,400&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+  
+.theme-light {
+    --primary: #fff;
+    --secondary: whitesmoke;
+    --accent: #54c75b;
+    --font-color: #000;
+    --pure: #fff;
+}
+
+.theme-dark {
+    --primary: #121212;
+    --secondary: #0b0b0b;
+    --accent: #54c75b;
+    --font-color: #fff;
+    --pure: #fff;
+}
+
+.theme-ocean {
+    --primary: #252c35;
+    --secondary: #20272e;
+    --accent: #54c75b;
+    --font-color: #fff;
+    --pure: #fff;
+}
+
+.theme-sepia {
+    --primary: #fbf1c7;
+    --secondary: #eadfb5;
+    --accent: #704214;
+    --font-color: #704214;
+    --pure: #fff;
+}
+
+body{
+    -webkit-font-smoothing: antialiased;
+    font-family: 'Nunito', sans-serif;
+    font-size: 62.5%;
+    color: var(--font-color);
+    background: var(--primary);
+
+    transition: background .3sb ease-in-out;
+}
+
+
+.container{
+    max-width: 1120px;
+    width: 90%;
+    margin: 0 auto;
+    /* background-color: red; */
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 1rem 0;
+}
+
+.container .links{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+
+nav .branding{
+    font-size:2rem;
+    font-weight: 100;
+    text-transform: capitalize;
+    color: var(--accent);
+}
+
+nav li{
+    list-style: none;
+    margin: 0 0.3rem;
+}
+
+
+nav li a {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+
+    text-decoration: none;
+    color: var(--font-color);
+}
+
+nav li select{
+    width: 7rem;
+    height: 2rem;
+    padding: 0 5px;
+    outline: none;
+    border: none;
+    background: var(--secondary);
+    color: var(--pure);
+    border-radius: 13px;
+    text-transform: uppercase;
+}
+header{
+    display: grid;
+    align-items: center;
+    grid-template-columns: 2fr 3fr;
+}
+header.header-container{
+    max-width: 1120px;
+    width: 90%;
+    margin: 0 auto;   
+}
+
+header .image {
+    position: relative;
+    top: 100px;
+    right: -57px;
+}
+header .image img {
+  
+    width: 100%;
+}
+header .banner h1{
+    font-size: 2.2rem;
+    font-weight: 700;
+    /* 
+    text-transform: capitalize;
+    line-height: 1; */
+}
+
+header .banner p{
+    /* color: var(--pure); */
+    font-size: 1.4rem;
+    line-height: 1;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+}
+
+header .banner .btn {
+    background: var(--accent);
+    width: 9rem;
+    height: 2rem;
+    outline: none;
+    border: none;
+    border-radius: 6px;
+    color: var(--pure);
+    font-weight: 900;
+    cursor: pointer;
+    margin-top: 7px;
+}
+
+section.lower{
+    background-color: var(--secondary);
+    padding: 80px;
+    height: 400px;
+}
+
